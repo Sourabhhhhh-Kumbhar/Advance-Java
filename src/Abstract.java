@@ -12,6 +12,7 @@ abstract class Animal
 
 class Dog extends Animal
 {
+    //this method overrides the class
     @Override
     void makeSound()
     {
