@@ -37,3 +37,22 @@ public class Synchronized {
         System.out.println("Final counter value: " + counter);
     }
 }
+
+
+//Two Ways To Create Synchronized
+
+//// 1. Synchronized METHOD (locks on "this" object automatically)
+//static synchronized void increment() {
+//    counter++;
+//}
+//
+/// / 2. Synchronized BLOCK (locks on a specific object — more control, better performance)
+//static final Object lock = new Object();
+//
+//static void incrementBlock() {
+//    synchronized (lock) {
+//        counter++;
+//    }
+//    // Only the critical section is locked, not the whole method —
+//    // useful when a method does other work that doesn't need protection.
+//}
